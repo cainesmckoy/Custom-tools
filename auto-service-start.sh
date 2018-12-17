@@ -1,11 +1,13 @@
 #!/bin/bash
-#this is a sub-script to start up any Service
-#caine munro
+#set up DNS with nothing but this script 
+#tons of fukin promts and variables
+#V1.2 update service is a variable that can be changed
 DEFAULT=default 
 
 function startup {
+    service="bind9"
     variables=${1-DEFAULT};
-    serv="service bind9 status ";
+    serv="service $service status ";
     $serv  > fuckshit.txt ;
     stat="grep dead fuckshit.txt";
     $stat;
@@ -13,13 +15,12 @@ function startup {
    
     if [[ "$match"=="true" ]]
     then
-        service bind9 start
+        service $service start
         sleep 1
-        service bind9 status
+        service $service status
     fi;
 
 }
 startup
 
 exit
-
