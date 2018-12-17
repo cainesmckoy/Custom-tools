@@ -21,6 +21,8 @@ function startup {
     fi;
 
 }
+
+#if just this command is wrapped in a WHILE function the script will run forever
 startup
 
 exit
