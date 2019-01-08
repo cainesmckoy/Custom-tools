@@ -122,7 +122,7 @@ function option { echo "
         listen-on-v6 { none; };
     };" > /etc/bind/named.conf.options;
 }
-options
+option
 
 chown root:bind db.f;
 chown root:bind db.r;
