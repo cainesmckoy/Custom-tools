@@ -1,0 +1,9 @@
+These collection of scripts can remove owner and group Sticky bit permisiions.  
+This could leave an attack with a shell but unable to run any commands
+essentially leaving every user except root in READ-ONLY
+BEFORE RUNNING: 
+Change root password
+Run Script as root & stay in root after permissions have been modified.
+
+
+Owner.sh will move the find command to the string fred
