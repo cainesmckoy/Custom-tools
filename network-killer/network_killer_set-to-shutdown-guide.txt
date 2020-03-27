@@ -1,0 +1,28 @@
+
+place script in /etc/init.d
+
+add
+
+
+### BEGIN INIT INFO
+# Provides:          skeleton
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Should-Start:      $portmap
+# Should-Stop:       $portmap
+# X-Start-Before:    nis
+# X-Stop-After:      nis
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# X-Interactive:     true
+# Short-Description: network killer
+# Description:       network killer
+### END INIT INFO
+
+
+to the script at the top
+
+
+run
+
+update-rc.d network_killer.sh defaults
