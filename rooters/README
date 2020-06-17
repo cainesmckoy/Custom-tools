@@ -1,0 +1,7 @@
+Program to play the song "when the routers die" when your routers/your ISP dies and you cannont reach the internet.
+
+made to run in background with "./rooters.sh &"
+
+replace string that calls the mp3 file with your own systems path to the mp3 file.
+
+made to run in a bash enviroment.
